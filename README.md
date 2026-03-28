@@ -130,9 +130,9 @@ MVC structure used in all services:
 
 ## 👨‍💻 Author
 
-Janith Tharindu
-S I R Fernando
-Nanayakkara N H R M
+Janith Tharindu,
+S I R Fernando,
+Nanayakkara N H R M,
 Caldera H T S
 
 ---
