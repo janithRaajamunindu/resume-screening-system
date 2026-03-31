@@ -26,4 +26,4 @@ exports.updateAnalysis = (req, res) => {
 exports.deleteAnalysis = (req, res) => {
   model.delete(req.params.id);
   res.json({ message: "Deleted" });
-};
+};  
