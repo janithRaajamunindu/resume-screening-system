@@ -16,5 +16,12 @@ module.exports = {
     return analysis;
   },
 
+  update: (id, data) => {
+    analyses = analyses.map((a) => (a.id == id ? { ...a, ...data } : a));
+  },
+
+  delete: (id) => {
+    analyses = analyses.filter((a) => a.id != id);
+  },
 
 };
