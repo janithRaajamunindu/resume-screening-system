@@ -65,11 +65,13 @@ app.use(
 
 // Matching Swagger
 app.use(
-  "/matching/api-docs",
+  "/matching",
   createProxyMiddleware({
     target: "http://localhost:3003",
     changeOrigin: true,
-    pathRewrite: { "^/matching": "" },
+    pathRewrite: {
+      "^/matching": "",
+    },
   }),
 );
 
