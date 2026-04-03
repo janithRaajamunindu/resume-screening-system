@@ -1,4 +1,3 @@
-
 let analyses = [];
 
 module.exports = {
@@ -8,8 +7,9 @@ module.exports = {
 
   create: (data) => {
     const analysis = {
-      id: Date.now(),
-      score: Math.floor(Math.random() * 100),
+      id: analyses.length + 1,
+      name: data.name || "Unknown Candidate",
+      score: data.score || Math.floor(Math.random() * 100),
       skills: data.skills || ["JavaScript", "AI"],
     };
     analyses.push(analysis);
@@ -23,5 +23,4 @@ module.exports = {
   delete: (id) => {
     analyses = analyses.filter((a) => a.id != id);
   },
-
 };
